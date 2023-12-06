@@ -8,7 +8,7 @@
 import Foundation
 
 class beerMenu : Menu {
-    func printBMenu() {
+    override func printMenu() {
         //맥주 메뉴 출력
         print("1. Philsner       |W 3.9| 뒷맛이 쌉쌀하면서 깔끔한 가벼운 체코식 맥주")
         print("2. Weiss          |W 3.9| 진한 과일향과 부드러운 목넘김이 매력적인 밀맥주")
