@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol MenuRef {
+    func printMenu()
+    func choiceMenu()
+    func quitMenu()
+}
