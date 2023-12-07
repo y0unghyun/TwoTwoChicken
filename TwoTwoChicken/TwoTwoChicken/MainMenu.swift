@@ -7,7 +7,9 @@
 
 import Foundation
 
+
 class MainMenu: MenuRef {
+
     func printMenu() {
         // 메뉴 출력 부분
         print("""
@@ -32,6 +34,7 @@ class MainMenu: MenuRef {
 //        print("0. 키오스크 종료    | 주문을 종료합니다.")
     }
     
+
     func choiceMenu() {
         while true {
             guard let input = readLine(), let input = Int(input) else {
@@ -40,6 +43,7 @@ class MainMenu: MenuRef {
             }
             
             switch input {
+
             case 0:
                 print("키오스크를 종료합니다.")
             case 1:
@@ -58,6 +62,7 @@ class MainMenu: MenuRef {
                 print("❗️ 입력이 잘못되었습니다. 다시 한 번 입력해주세요.")
                 
             }
+
             print(printMenu())
         }
     }
@@ -67,11 +72,11 @@ class MainMenu: MenuRef {
     }
     func quitMenu() {
         print("🖥️ 키오스크를 종료합니다.")
+
     }
         // 따로 초기화 구문은 작성하지 않았습니다.
         // 나중에 소지금액 및 결제 단계에 들어서 작성할 예정 입니다.
         // 메인 메뉴 브랜치에서 작성한 파일입니다.
-
 }
 
 
