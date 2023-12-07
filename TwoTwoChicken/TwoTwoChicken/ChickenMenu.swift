@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ChickenMenu {
-    func printChickenMenu() {
+class ChickenMenu : Menu {
+    override func printMenu() {
         while true {
             print(" [치킨 메뉴] ")
             print("1. 허니콤보")
@@ -21,19 +21,20 @@ class ChickenMenu {
             print("0. 뒤로가기")
             
             guard let input = readLine(), let number = Int(input) else {
-                print("잘못된 입력입니다. 다시 입력해주세요.")
+                print("error: 숫자를 적어주세요.")
                 continue
             }
             
             switch number {
             case 1...7:
                 print("선택된 치킨 메뉴: \(number)")
-                // 선택된 치킨 메뉴에 대한 처리
+                return // 선택된 치킨 메뉴에 대한 추가 처리
             case 0:
-                return // 메인 메뉴로 돌아감
+                print("이전 메뉴판으로 돌아갑니다!")
+                return
             default:
-                print("메뉴를 잘못 누르셨습니다. 다시 눌러주세요!")
-                
+                print("error: 잘못된 입력입니다. 다시 한 번 세부 메뉴 번호를 입력해주세요.")
+                print(printMenu())
             }
         }
     }
