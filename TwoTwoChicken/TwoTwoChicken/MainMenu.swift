@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Menu: MenuRef {
+class MainMenu: MenuRef {
     func printMenu() {
         // 메뉴 출력 부분
         print("""
