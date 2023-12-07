@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Menu {
+class Menu: MenuRef {
+    
     func printMenu() {
         // 메뉴 출력 부분
         print(" [TwoTwoChicken's MENU] ")
@@ -17,8 +18,8 @@ class Menu {
         print("4. Beer          | 치킨의 영원한 단짝, 시원한 맥주")
         print("0. 키오스크 종료    | 주문을 종료합니다.")
     }
-     
-    func getInput() -> Int? {
+    
+    func choiceMenu() -> Int {
         guard var input = readLine() else {
             print("error: 숫자를 적어주세요.")
             printMenu()
@@ -48,12 +49,14 @@ class Menu {
                 print("error: 잘못된 입력입니다. 다시 한 번 세부 메뉴 번호를 입력해주세요.")
                 print(printMenu())
             }
+            
         }
     }
         
+    func quitMenu() {
+            <#code#>
+    }
         // 따로 초기화 구문은 작성하지 않았습니다.
         // 나중에 소지금액 및 결제 단계에 들어서 작성할 예정 입니다.
-        
         // 메인 메뉴 브랜치에서 작성한 파일입니다.
-
 }
