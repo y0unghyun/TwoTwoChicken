@@ -33,6 +33,7 @@ class ChickenMenu {
                 return // 메인 메뉴로 돌아감
             default:
                 print("메뉴를 잘못 누르셨습니다. 다시 눌러주세요!")
+                
             }
         }
     }
