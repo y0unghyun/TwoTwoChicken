@@ -65,3 +65,24 @@ class BeerMenu : MenuRef {
         MainMenu().printMenu()
     }
 }
+
+class Philsner : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Philsner"
+    
+}
+
+class Weiss : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Weiss"
+}
+
+class Dunkles : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Dunkles"
+}
+
+class Weissbockbier : MenuDetailRef {
+    var price: Double = 4.9
+    var name: String = "Weissbockbier"
+}
