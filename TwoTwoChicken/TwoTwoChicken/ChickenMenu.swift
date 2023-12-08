@@ -21,9 +21,11 @@ class ChickenMenu : MenuRef {
               | 0. 메뉴 돌아가기    | 메인 메뉴판으로 돌아갑니다                                 |
               *-----------------------------------------------------------------------*
               """)
+
     }
     
     func choiceMenu() {
+
         guard let input = readLine(), let intInput = Int(input) else {
             print("error: 숫자를 적어주세요.")
             return

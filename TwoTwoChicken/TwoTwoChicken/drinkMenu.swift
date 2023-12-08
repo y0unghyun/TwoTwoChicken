@@ -6,7 +6,9 @@
 //
 import Foundation
 
+
 class DrinkMenu: MenuRef {
+
 
     func printMenu() {
         //음료 메뉴 출력
@@ -22,12 +24,14 @@ class DrinkMenu: MenuRef {
               | 0. 메뉴 돌아가기       | 메인 메뉴판으로 돌아갑니다             |
               *------------------------------------------------------*
  
+
  
  """)
     }
 
         func choiceMenu(input: Int) {
             guard let input = readLine(), let input = Int(input) else {
+
                 print("error: 숫자를 적어주세요.")
                 return
             } // 옵셔널 바인딩
