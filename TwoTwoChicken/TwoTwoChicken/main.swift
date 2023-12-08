@@ -7,3 +7,18 @@
 
 import Foundation
 
+protocol MenuRef {
+    func printMenu()
+    func choiceMenu()
+    func quitMenu()
+}
+
+
+protocol MenuDetailRef {
+    var price: Double { get set }
+    var name: String { get }
+}
+
+let user = MainMenu()
+
+user.choiceMenu()

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		141D3BE92B1DC58C00A05261 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D3BE82B1DC58C00A05261 /* main.swift */; };
 		141D3C032B1ED1BB00A05261 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D3C022B1ED1BA00A05261 /* MainMenu.swift */; };
+		141D3C2C2B21D6C000A05261 /* ChickenMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D3C2A2B21D6C000A05261 /* ChickenMenu.swift */; };
+		141D3C2D2B21D6C000A05261 /* drinkMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D3C2B2B21D6C000A05261 /* drinkMenu.swift */; };
+		1447AA542B22B18B000E9823 /* SIDEMENU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1447AA532B22B18B000E9823 /* SIDEMENU.swift */; };
 		CC395E932B1EE3A10012AF3C /* beerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC395E922B1EE3A10012AF3C /* beerMenu.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		141D3BE52B1DC58C00A05261 /* TwoTwoChicken */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TwoTwoChicken; sourceTree = BUILT_PRODUCTS_DIR; };
 		141D3BE82B1DC58C00A05261 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		141D3C022B1ED1BA00A05261 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		141D3C2A2B21D6C000A05261 /* ChickenMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickenMenu.swift; sourceTree = "<group>"; };
+		141D3C2B2B21D6C000A05261 /* drinkMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drinkMenu.swift; sourceTree = "<group>"; };
+		1447AA532B22B18B000E9823 /* SIDEMENU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SIDEMENU.swift; path = /Users/yhkim/Desktop/Sparta_iOS_Track_Repository/TwoTwoChicken/TwoTwoChicken/TwoTwoChicken/SIDEMENU.swift; sourceTree = "<absolute>"; };
 		CC395E922B1EE3A10012AF3C /* beerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +69,10 @@
 			children = (
 				141D3BE82B1DC58C00A05261 /* main.swift */,
 				141D3C022B1ED1BA00A05261 /* MainMenu.swift */,
+				141D3C2A2B21D6C000A05261 /* ChickenMenu.swift */,
+				141D3C2B2B21D6C000A05261 /* drinkMenu.swift */,
 				CC395E922B1EE3A10012AF3C /* beerMenu.swift */,
+				1447AA532B22B18B000E9823 /* SIDEMENU.swift */,
 			);
 			path = TwoTwoChicken;
 			sourceTree = "<group>";
@@ -128,7 +137,10 @@
 			files = (
 				CC395E932B1EE3A10012AF3C /* beerMenu.swift in Sources */,
 				141D3BE92B1DC58C00A05261 /* main.swift in Sources */,
+				141D3C2D2B21D6C000A05261 /* drinkMenu.swift in Sources */,
+				141D3C2C2B21D6C000A05261 /* ChickenMenu.swift in Sources */,
 				141D3C032B1ED1BB00A05261 /* MainMenu.swift in Sources */,
+				1447AA542B22B18B000E9823 /* SIDEMENU.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
