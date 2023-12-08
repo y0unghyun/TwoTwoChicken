@@ -64,6 +64,8 @@ class MainMenu: MenuRef {
     }
     
     init() {
+        var userMoney: Double = 10.0
+        var pocket: [String] = []
         printMenu()
     }
         // 메인 메뉴 브랜치에서 작성한 파일입니다.
