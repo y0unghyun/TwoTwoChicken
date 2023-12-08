@@ -7,7 +7,7 @@
 
 import Foundation
 
-class beerMenu : MenuRef {
+class BeerMenu : MenuRef {
     
     func printMenu() {
         //맥주 메뉴 출력
@@ -22,6 +22,7 @@ class beerMenu : MenuRef {
               | 0. 메뉴 돌아가기      | 메인 메뉴판으로 돌아갑니다                               |
               *-----------------------------------------------------------------------*
  """)
+
     }
     
     func choiceMenu() {
@@ -60,4 +61,25 @@ class beerMenu : MenuRef {
     init() {
         printMenu()
     }
+}
+
+class Philsner : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Philsner"
+    
+}
+
+class Weiss : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Weiss"
+}
+
+class Dunkles : MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Dunkles"
+}
+
+class Weissbockbier : MenuDetailRef {
+    var price: Double = 4.9
+    var name: String = "Weissbockbier"
 }

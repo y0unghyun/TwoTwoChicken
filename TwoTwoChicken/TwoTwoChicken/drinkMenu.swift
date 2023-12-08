@@ -64,4 +64,29 @@ class DrinkMenu: MenuRef {
     init() {
         printMenu()
     }
+
+class cola : MenuDetailRef {
+    var price: Double = 2.5
+    var name: String = "콜라"
+}
+
+class cider : MenuDetailRef {
+    var price: Double = 2.5
+    var name: String = "사이다"
+}
+
+class slushpodo : MenuDetailRef {
+    var price: Double = 2.0
+    var name: String = "슬러쉬 포도맛"
+}
+
+class slushorange : MenuDetailRef {
+    var price: Double = 2.0
+    var name: String = "슬러쉬 오렌지맛"
+}
+
+class soju : MenuDetailRef {
+    var price: Double = 5.0
+    var name: String = "소주"
+
 }
