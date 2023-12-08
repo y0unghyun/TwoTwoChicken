@@ -86,23 +86,3 @@ class ChickenMenu: MenuRef {
 
     }
 }
-
-class honeycombo : MenuDetailRef {
-    var price: Double = 21.9
-    var name: String = "허니콤보"
-}
-
-class redcombo : MenuDetailRef {
-    var price: Double = 21.9
-    var name: String = "레드콤보"
-}
-
-class halfcombo : MenuDetailRef {
-    var price: Double = 22.9
-    var name: String = "반반콤보"
-}
-
-class redwing : MenuDetailRef {
-    var price: Double = 23.9
-    var name: String = "레드윙"
-}
