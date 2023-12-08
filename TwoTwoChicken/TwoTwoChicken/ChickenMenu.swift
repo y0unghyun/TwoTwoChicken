@@ -22,6 +22,10 @@ class ChickenMenu : MenuRef {
               *-----------------------------------------------------------------------*
               """)
 
+    }
+    
+    func choiceMenu() {
+
         guard let input = readLine(), let intInput = Int(input) else {
             print("error: 숫자를 적어주세요.")
             return
@@ -45,7 +49,7 @@ class ChickenMenu : MenuRef {
     }
 
     func quitMenu() {
-        Menu().printMenu()
+        MainMenu().printMenu()
     }
 }
-}
+

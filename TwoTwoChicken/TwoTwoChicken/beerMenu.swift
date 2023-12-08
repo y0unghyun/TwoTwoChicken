@@ -28,7 +28,7 @@ class beerMenu : MenuRef {
 //        print("4. Weissbockbier  |W 4.9| 깊이 있고 부드러운 과일향을 가진 고알콜맥주")
 //        print("0. 메뉴 돌아가기      | 메뉴판으로 돌아갑니다.")
 //
-//    }
+    }
     
     func choiceMenu() {
         guard var input = readLine() else {
@@ -60,6 +60,6 @@ class beerMenu : MenuRef {
     }
     
     func quitMenu() {
-        Menu().printMenu()
+        MainMenu().printMenu()
     }
 }

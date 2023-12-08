@@ -12,4 +12,4 @@ protocol MenuRef {
     func choiceMenu()
     func quitMenu()
 }
-Menu().printMenu()
+MainMenu().printMenu()

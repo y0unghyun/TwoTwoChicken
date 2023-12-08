@@ -48,13 +48,13 @@ class MainMenu: MenuRef {
                 print("키오스크를 종료합니다.")
             case 1:
                 print("Chicken 메뉴로 이동합니다!")
-                chickenMenu().printMenu()
+                ChickenMenu().printMenu()
             case 2:
                 print("Side Snacks 메뉴로 이동합니다!")
-                sideMenu().printMenu()
+                SideMenu().printMenu()
             case 3:
                 print("Drink 메뉴로 이동합니다!")
-                drinkMenu().printMenu()
+                DrinkMenu().printMenu()
             case 4:
                 print("Beer 메뉴로 이동합니다!")
                 beerMenu().printMenu()
@@ -78,6 +78,3 @@ class MainMenu: MenuRef {
         // 나중에 소지금액 및 결제 단계에 들어서 작성할 예정 입니다.
         // 메인 메뉴 브랜치에서 작성한 파일입니다.
 }
-
-
-
