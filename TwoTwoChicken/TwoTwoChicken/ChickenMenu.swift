@@ -11,6 +11,7 @@ class ChickenMenu : MenuRef {
     func printMenu() {
         // 치킨 메뉴 출력
         print("""
+              
               *-----------------------------------------------------------------------*
               |                      [TwoTwoChicken's Chicken MENU]                   |
               *-----------------------------------------------------------------------*
@@ -50,6 +51,10 @@ class ChickenMenu : MenuRef {
 
     func quitMenu() {
         MainMenu().printMenu()
+    }
+    
+    init() {
+        printMenu()
     }
 }
 

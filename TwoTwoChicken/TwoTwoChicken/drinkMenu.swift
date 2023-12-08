@@ -11,6 +11,7 @@ class DrinkMenu: MenuRef {
     func printMenu() {
         //음료 메뉴 출력
         print("""
+ 
               *------------------------------------------------------*
               |             [TwoTwoChicken's DRINK MENU]             |
               *------------------------------------------------------*
@@ -21,8 +22,6 @@ class DrinkMenu: MenuRef {
               | 5. 소주              |W 5.0| 참이슬, 처음처럼, 새로, 진로    |
               | 0. 메뉴 돌아가기       | 메인 메뉴판으로 돌아갑니다             |
               *------------------------------------------------------*
-
-
  """)
     }
 
@@ -60,5 +59,9 @@ class DrinkMenu: MenuRef {
 
     func quitMenu() {
         MainMenu().printMenu()
+    }
+    
+    init() {
+        printMenu()
     }
 }

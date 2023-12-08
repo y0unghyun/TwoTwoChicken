@@ -12,4 +12,8 @@ protocol MenuRef {
     func choiceMenu()
     func quitMenu()
 }
-MainMenu().printMenu()
+
+
+    MainMenu().choiceMenu()
+
+
