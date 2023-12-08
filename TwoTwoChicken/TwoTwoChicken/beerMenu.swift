@@ -7,10 +7,30 @@
 
 import Foundation
 
-class BeerMenu : MenuRef {
-    
+class Philsner: MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Philsner"
+}
+
+class Weiss: MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Weiss"
+}
+
+class Dunkles: MenuDetailRef {
+    var price: Double = 3.9
+    var name: String = "Dunkles"
+}
+
+class Weissbockbier: MenuDetailRef {
+    var price: Double = 4.9
+    var name: String = "Weissbockbier"
+}
+
+class BeerMenu: MenuRef {
+    var totalPrice: Double = 0
+
     func printMenu() {
-        //맥주 메뉴 출력
         print("""
               *-----------------------------------------------------------------------*
               |                      [TwoTwoChicken's BEER MENU]                      |
@@ -22,64 +42,50 @@ class BeerMenu : MenuRef {
               | 0. 메뉴 돌아가기      | 메인 메뉴판으로 돌아갑니다                               |
               *-----------------------------------------------------------------------*
  """)
-
     }
     
     func choiceMenu() {
-        guard let input = readLine() else {
-            print("error: 숫자를 적어주세요.")
-            return
-        } // 옵셔널 바인딩 (String? -> String)
+        while true {
+            guard let input = readLine(), let intInput = Int(input) else {
+                print("error: 숫자를 적어주세요.")
+                continue
+            }
 
-        if let intInput = Int(input) {
             switch intInput {
             case 1:
-                print("Philsner을 골랐습니다.")
-                return
+                let item = Philsner()
+                totalPrice += item.price
+                print("\(item.name)를 골랐습니다. 가격은 \(item.price)입니다.")
             case 2:
-                print("Weiss을 골랐습니다")
-                return
+                let item = Weiss()
+                totalPrice += item.price
+                print("\(item.name)를 골랐습니다. 가격은 \(item.price)입니다.")
             case 3:
-                print("Dunkles를 골랐습니다")
-                return
+                let item = Dunkles()
+                totalPrice += item.price
+                print("\(item.name)를 골랐습니다. 가격은 \(item.price)입니다.")
             case 4:
-                print("Weissbockbier을 골랐습니다")
-                return
+                let item = Weissbockbier()
+                totalPrice += item.price
+                print("\(item.name)를 골랐습니다. 가격은 \(item.price)입니다.")
             case 0:
+                print("현재까지 총 금액은 \(totalPrice)입니다.")
                 quitMenu()
+                return
             default:
                 print("error: 잘못된 입력입니다. 다시 한 번 세부 메뉴 번호를 입력해주세요.")
-                printMenu()
+                continue
             }
         }
     }
-    
+
     func quitMenu() {
-        MainMenu().printMenu()
+        // 메인 메뉴로 돌아가거나 프로그램을 종료하는 로직
     }
     
     init() {
         printMenu()
+        choiceMenu()
     }
 }
 
-class Philsner : MenuDetailRef {
-    var price: Double = 3.9
-    var name: String = "Philsner"
-    
-}
-
-class Weiss : MenuDetailRef {
-    var price: Double = 3.9
-    var name: String = "Weiss"
-}
-
-class Dunkles : MenuDetailRef {
-    var price: Double = 3.9
-    var name: String = "Dunkles"
-}
-
-class Weissbockbier : MenuDetailRef {
-    var price: Double = 4.9
-    var name: String = "Weissbockbier"
-}
