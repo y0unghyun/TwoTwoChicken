@@ -18,4 +18,7 @@ protocol MenuDetailRef {
     var price: Double { get set }
     var name: String { get }
 }
-MainMenu().printMenu()
+
+let user = MainMenu()
+
+user.choiceMenu()

@@ -27,17 +27,14 @@ class SideMenu: MenuRef {
 
 """)
     }
-
-}
-
-
-func choiceMenu() {
-    {
-    guard var input = readline() else {
-        print("error: 숫자를 적어주세요.")
-        return
-    } //옵셔널 바인딩
     
+    func choiceMenu() {
+        
+        guard var input = readLine(), let input = Int(input) else {
+            print("error: 숫자를 적어주세요.")
+            return
+        } //옵셔널 바인딩
+        
         switch input {
             
         case 1 "케이준 감자튀김":
@@ -58,11 +55,12 @@ func choiceMenu() {
             // 오류 메세지에 대한 알림
         }
     }
-}
-
-
-func quitMenu() {
-    Menu().printMenu()
+    
+    
+    
+    func quitMenu() {
+        Menu().printMenu()
+    }
 }
 
 class fries : MenuDetailRef {

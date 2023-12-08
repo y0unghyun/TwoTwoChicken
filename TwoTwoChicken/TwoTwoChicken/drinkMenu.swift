@@ -7,7 +7,7 @@
 import Foundation
 
 class DrinkMenu: MenuRef {
-
+    
     func printMenu() {
         //음료 메뉴 출력
         print("""
@@ -24,14 +24,14 @@ class DrinkMenu: MenuRef {
               *------------------------------------------------------*
  """)
     }
-
+    
     func choiceMenu() {
         guard let input = readLine(), let input = Int(input) else {
-
+            
             print("error: 숫자를 적어주세요.")
             return
         } // 옵셔널 바인딩
-
+        
         switch input {
         case 1:
             print("콜라를 골랐습니다.")
@@ -56,7 +56,7 @@ class DrinkMenu: MenuRef {
             printMenu()
         }
     }
-
+    
     func quitMenu() {
         MainMenu().printMenu()
     }
@@ -64,6 +64,7 @@ class DrinkMenu: MenuRef {
     init() {
         printMenu()
     }
+}
 
 class cola : MenuDetailRef {
     var price: Double = 2.5

@@ -49,7 +49,7 @@ class MainMenu: MenuRef {
                 DrinkMenu().choiceMenu()
             case 4:
                 print("Beer 메뉴로 이동합니다!")
-                beerMenu().choiceMenu()
+                BeerMenu().choiceMenu()
             default:
                 print("❗️ 입력이 잘못되었습니다. 다시 한 번 입력해주세요.")
                 
@@ -64,7 +64,7 @@ class MainMenu: MenuRef {
     }
     
     init() {
-        var userMoney: Double = 10.0
+        var userMoney: Double = 50.0
         var pocket: [String] = []
         printMenu()
     }
