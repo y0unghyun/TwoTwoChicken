@@ -13,6 +13,7 @@ protocol MenuRef {
     func quitMenu()
 }
 
+
 protocol MenuDetailRef {
     var price: Double { get set }
     var name: String { get }
