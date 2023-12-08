@@ -33,11 +33,13 @@ class soju : MenuDetailRef {
 }
 
 class DrinkMenu: MenuRef {
+
     var totalPrice: Double = 0
 
     func printMenu() {
         // 음료 메뉴 출력
         print("""
+ 
               *------------------------------------------------------*
               |             [TwoTwoChicken's DRINK MENU]             |
               *------------------------------------------------------*
@@ -50,8 +52,9 @@ class DrinkMenu: MenuRef {
               *------------------------------------------------------*
  """)
     }
-
+    
     func choiceMenu() {
+
         while true {
             guard let input = readLine(), let intInput = Int(input) else {
                 print("error: 숫자를 적어주세요.")
@@ -87,9 +90,10 @@ class DrinkMenu: MenuRef {
                 print("error: 잘못된 입력입니다. 다시 한 번 세부 메뉴 번호를 입력해주세요.")
                 continue
             }
+
         }
     }
-
+    
     func quitMenu() {
         // 메인 메뉴로 돌아가거나 프로그램을 종료하는 로직
     }
@@ -98,4 +102,34 @@ class DrinkMenu: MenuRef {
         printMenu()
         choiceMenu()
     }
+    
+    init() {
+        printMenu()
+    }
+}
+
+class cola : MenuDetailRef {
+    var price: Double = 2.5
+    var name: String = "콜라"
+}
+
+class cider : MenuDetailRef {
+    var price: Double = 2.5
+    var name: String = "사이다"
+}
+
+class slushpodo : MenuDetailRef {
+    var price: Double = 2.0
+    var name: String = "슬러쉬 포도맛"
+}
+
+class slushorange : MenuDetailRef {
+    var price: Double = 2.0
+    var name: String = "슬러쉬 오렌지맛"
+}
+
+class soju : MenuDetailRef {
+    var price: Double = 5.0
+    var name: String = "소주"
+
 }

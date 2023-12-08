@@ -12,4 +12,13 @@ protocol MenuRef {
     func choiceMenu()
     func quitMenu()
 }
-MainMenu().printMenu()
+
+
+protocol MenuDetailRef {
+    var price: Double { get set }
+    var name: String { get }
+}
+
+let user = MainMenu()
+
+user.choiceMenu()
